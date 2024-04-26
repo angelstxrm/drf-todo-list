@@ -15,10 +15,10 @@ class CustomUser(AbstractUser):
 
 
 class Complexity(models.Model):
-    ComplexityTask = models.CharField('Сложность', max_length=11, default='Easy')
+    complexity_task = models.CharField('Сложность', max_length=11, default='Easy')
 
     def __str__(self):
-        return self.ComplexityTask
+        return self.complexity_task
     
     class Meta:
         verbose_name = 'Сложность'
@@ -26,10 +26,10 @@ class Complexity(models.Model):
 
 
 class Status(models.Model):
-    StatusTask = models.CharField('Статус', max_length=11, default='In progress')
+    status_task = models.CharField('Статус', max_length=11, default='In progress')
 
     def __str__(self):
-        return self.StatusTask
+        return self.status_task
     
     class Meta:
         verbose_name = 'Статус'

@@ -4,13 +4,13 @@ from .models import Task, CustomUser, Complexity, Status
 class TaskStatusSerializer(serializers.ModelSerializer):
     class Meta:
         model = Status
-        fields = ('StatusTask',)
+        fields = ('status_task',)
 
 
 class TaskComplexitySerializer(serializers.ModelSerializer):
     class Meta:
         model = Complexity
-        fields = ('ComplexityTask',)
+        fields = ('complexity_task',)
 
 
 class TaskUserSerializer(serializers.ModelSerializer):
