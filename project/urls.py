@@ -6,7 +6,7 @@ from rest_framework import routers
 
 
 router = routers.SimpleRouter()
-router.register(r'task', TaskViewSet)
+router.register(r'tasks', TaskViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
